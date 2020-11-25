@@ -34,7 +34,7 @@ export default {
   background: white;
   color: #2c2c2c;
   width: 100vw;
-  padding: 30px;
+  padding: 5px;
   font-size: 14px;
   border-radius: 10px;
   box-shadow: 0px -1px 1px 1px rgba(0, 0, 0, 0.015),
@@ -73,4 +73,7 @@ i {
   margin-right: 5px;
 }
 
+.contact {
+  margin-left: 5px;
+}
 </style>
