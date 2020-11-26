@@ -9,7 +9,7 @@
       <button @click="remove(index)">×</button>
     </li>
   </ul>
-  <form @submit.prevent="addHero" class="footer">
+  <form @submit.prevent="addHero" class="footer-card">
     <input
       v-model.trim="newHero"
       placeholder="Type new hero here"
@@ -127,9 +127,8 @@ li button:hover {
 .confirm {
   background-color: steelblue;
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.03),
-              0px 2px 2px 2px rgba(0, 0, 0, 0.03),
-              0px 4px 4px 4px rgba(0, 0, 0, 0.03),
-              0px 8px 8px 8px rgba(0, 0, 0, 0.03);
+    0px 2px 2px 2px rgba(0, 0, 0, 0.03), 0px 4px 4px 4px rgba(0, 0, 0, 0.03),
+    0px 8px 8px 8px rgba(0, 0, 0, 0.03);
   transition: 0.2s filter ease-in;
 }
 
@@ -137,7 +136,7 @@ li button:hover {
   filter: brightness(130%);
 }
 
-.footer {
+.footer-card {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -160,5 +159,45 @@ input {
 
 input:focus {
   border: 2px solid steelblue;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-card {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  input {
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+
+  .confirm {
+    padding: 15px;
+    transition: 0.1s all ease-in;
+  }
+
+  .confirm:focus {
+    filter: none;
+  }
+
+  .confirm:active {
+    border: 2px solid steelblue;
+    background: white;
+    color: steelblue;
+  }
+
+  li button:hover {
+    background: crimson;
+    color: white;
+    border: none;
+  }
+
+  li button:active {
+    background: white;
+    color: crimson;
+    border: 2px solid crimson;
+  }
+
 }
 </style>

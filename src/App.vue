@@ -31,11 +31,13 @@ export default {
 }
 
 body {
-  padding: 10px;
+  padding-top: 10px;
   font-family: "Nunito", sans-serif;
   background-color: #e5e5e5;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
 }
 
 #content {
