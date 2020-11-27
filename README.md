@@ -39,7 +39,7 @@ yarn build
 Link to the tutorial:
 [Vue 3 Tutorial - Full Course 10 Hours 10 apps](https://www.youtube.com/watch?v=e-E0UB-YDRk)
 
-Link to the app: [portfolio-dcheros.tk](https://portfolio.dcheros.tk)
+Link to the app: [portfolio-dcheros.tk](http://www.portfolio.dcheros.tk)
 
 Consider hiring me as Frontend developer :man_technologist:!
 
